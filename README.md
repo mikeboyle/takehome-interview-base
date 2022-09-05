@@ -41,8 +41,16 @@ The menu items are pulled from `./data.js` by the `<Menu />` component. The data
 
 Each menu item also has a list of `tags`. Notice that the same tag may appear in more than one item's tag list.
 
+### API
+In a real life application (and in many real-life interviews), your app will need to get data from an API or other external source. That means making an HTTP request rather than importing `./data.js`. There is a live API that hosts slightly different menu item data, which you can get with a `GET` request to `${API_URL}/data`. The `API_URL` constant is exported from `src/api.js`.
+
 ## Possible features
 You may be asked to build one or more of these features (or a feature not on the list).
+
+1. **Fetch Data from API**: Instead of importing the data from a file, fetch the data from the API.
+    - When the application loads, make a network call to the route `/data` for the url `API_URL`
+    - The application should fetch the data **only once per visit** (refershing the page is a new visit)
+    - The app should render the API data, not the data from the file. The API data has more items and the first two items are different from the data from the file.
 
 1. **Expand / Collapse**: Add a `Show more` button on each menu item. When clicked:
     - the menu item expands (no animation necessary)
