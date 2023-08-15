@@ -42,7 +42,7 @@ The menu items are pulled from `./data.js` by the `<Menu />` component. The data
 Each menu item also has a list of `tags`. Notice that the same tag may appear in more than one item's tag list.
 
 ### API
-In a real life application (and in many real-life interviews), your app will need to get data from an API or other external source. That means making an HTTP request rather than importing `./data.js`. There is a live API that hosts slightly different menu item data, which you can get with a `GET` request to `${API_URL}/data`. The `API_URL` constant is exported from `src/api.js`.
+In a real life application (and in many real-life interviews), your app will need to get data from an API or other external source. That means making an HTTP request rather than importing `./data.js`. There is a live API that hosts slightly different menu item data, which you can get with a `GET` request to `${API_URL}/items`. The `API_URL` constant is exported from `src/api.js`.
 
 ## Possible features
 You may be asked to build one or more of these features (or a feature not on the list).
